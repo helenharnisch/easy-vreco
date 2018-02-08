@@ -1,0 +1,70 @@
+ body {
+   background-color: #443f42;
+ }
+
+ div#map {
+  width: 100%;
+  height: 90vh;
+  outline: 1px solid #fff;
+  padding: 5px;
+  padding-bottom: 0;
+  margin: 10px auto;
+  margin-bottom: 50px;
+}
+
+h2 {
+  color: #fff;
+  font-size: 40px;
+}
+
+p {
+  color: #fff;
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+/*Formulario*/
+
+.form-control {
+  color: #fff;
+  background: #686970;
+  border: 1px solid #fff;
+}
+
+.form {
+  padding-top: 10px;
+}
+
+.one {
+  color: #000;
+  background: #fff;
+}
+
+.one:hover {
+  color: #fff;
+  background: #000;
+}
+
+.input-group-addon {
+  background: none;
+  border: none;
+}
+
+.form-control{
+  height: 3em;
+}
+
+/*Cambiar placeholder input*/
+
+.form-control::-webkit-input-placeholder {
+    color: white;
+}
+.form-control::-moz-placeholder {
+    color: white;
+}
+.form-control:-ms-input-placeholder {
+    color: white;
+}
+.form-control:-moz-placeholder {
+    color: white;
+}

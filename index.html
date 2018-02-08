@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://use.fontawesome.com/6e89b300da.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <title>Geolocation</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-lg-6 col-sx-12">
+          <h2>Easy-vreco</h2>
+          <p>Te permite establecer rutas para tu trayecto. Ideal para encontrar compañeros de ejercicio o probar nuevos caminos. </p><br>
+        </div>
+        <div class="col-lg-6 col-sx-12">
+          <form><br>
+            <div class="input-group">
+              <span class="input-group-addon"><img src="img/shape.png" alt="img"></span>
+              <input id='punto-partida' type="text" class="form-control" placeholder="Ingrese su punto de partida">
+            </div><br><br>
+            <div class="input-group">
+              <span class="input-group-addon"><img src="img/shape2.png" alt="img"></span>
+              <input id='punto-destino' type="text" class="form-control" placeholder="Ingrese su destino">
+            </div><br><br>
+            <div class="col-lg-12 text-center">
+              <button id="encuentrame" type="button" class="one btn btn-primary"><strong>¡ENCUÉNTRAME!</strong></button>
+              <button id="trazar-ruta" type="submit" class="one btn btn-primary"><strong>¡TRAZAR RUTA!</strong></button>
+            </div>
+          </form><br><br>
+        </div>
+        <div id="map"></div>
+      </div>
+    </div>
+
+    <!-- script -->
+    <script async defer src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBNq_UtOGDu7Veg1yGzIgG4nJJ6Umv6o8M&callback=initMap&libraries=places"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
